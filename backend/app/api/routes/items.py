@@ -15,7 +15,7 @@ def read_items(
     session: SessionDep, current_user: CurrentUser, skip: int = 0, limit: int = 100
 ) -> Any:
     """
-    Retrieve items resource.
+    Retrieve items.
     """
 
     if current_user.is_superuser:
